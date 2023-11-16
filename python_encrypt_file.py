@@ -10,6 +10,7 @@ def encrypt(file):
       cip_text = cip.encrypt(data)
       with open(file, "wb") as f:
          f.write(cip_text)
+      f.close()
 
 file = input()
 encrypt(file)
